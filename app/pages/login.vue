@@ -16,5 +16,8 @@ const route = useRoute()
         <NuxtLink to="/login">Login</NuxtLink>
       </li>
     </ul>
+    <div>
+      <Button>Login</Button>
+    </div>
   </div>
 </template>
