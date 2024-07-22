@@ -1,0 +1,28 @@
+# 開発用のdocker-compose.yml
+
+services:
+
+  # 本番ではECSで動かす
+  app:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    volumes:
+      - ./app:/var/www/html
+    ports:
+      - "3000:3000"
+      - "5555:5555"
+      - "24678:24678"
+    tty: true
+    stdin_open: true
+
+  # 本番ではRDSで動かす
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: db
+      POSTGRES_PORT: 5432
+    ports:
+      - "5432:5432"

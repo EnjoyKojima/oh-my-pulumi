@@ -1,0 +1,10 @@
+name: oh-my-pulumi
+runtime:
+  name: nodejs
+  options:
+    packagemanager: npm
+description: Use AWS. Launch a container to run Nuxt.js. Build a database with Postgres:16.
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: https://www.pulumi.com/ai/api/project/48bc9acb-e5f2-4c4e-90eb-23d0480a9ab4.zip
