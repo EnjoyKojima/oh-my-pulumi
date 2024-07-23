@@ -10,14 +10,6 @@ export default defineNuxtConfig({
     transpile: ['trpc-nuxt']
   },
 
-  vite: {
-    server: {
-      watch: {
-        usePolling: true,
-      },
-    },
-  },
-
   shadcn: {
     /**
      * Prefix for all the imported component
