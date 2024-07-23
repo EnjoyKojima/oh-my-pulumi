@@ -7,9 +7,9 @@
   },
   "author": "",
   "dependencies": {
-    "@pulumi/pulumi": "*",
     "@pulumi/aws": "6.13.3",
     "@pulumi/docker": "4.4.3",
-    "postgresql": "*"
+    "@pulumi/postgresql": "^3.11.3",
+    "@pulumi/pulumi": "^3.126.0"
   }
 }
