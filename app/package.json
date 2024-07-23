@@ -4,13 +4,15 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
+    "start": "nuxt start",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "db:seed": "prisma db seed",
     "db:reset": "prisma migrate dev reset",
-    "db:studio": "prisma studio"
+    "db:studio": "prisma studio",
+    "db:test": "tsx test.ts"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"
