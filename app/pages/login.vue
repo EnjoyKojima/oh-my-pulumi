@@ -22,6 +22,8 @@ const { $client } = useNuxtApp()
 
 const hello = await $client.hello.useQuery({ text: 'client' })
 // { "data": { "greeting": "hello client" }, "pending": false, "error": null, "status": "success" }
+
+const {data:users}= await $client.user.useQuery()
 </script>
 
 <template>
@@ -57,6 +59,10 @@ const hello = await $client.hello.useQuery({ text: 'client' })
       Submit
     </Button>
     <!-- Hello -->
-    <p>{{ hello }}</p>
+    <div>{{ hello }}</div>
+    <!-- User -->
+    <ul>
+      <li v-for="user in users">{{ user }}</li>
+    </ul>
   </form>
 </template>
