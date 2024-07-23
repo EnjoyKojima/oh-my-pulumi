@@ -1,12 +1,15 @@
 # Kojima Minimal Stack
 
 - Nuxt.js
-- tRPC
+- [tRPC](https://trpc.io/)
 - Prisma
 - Tailwind CSS
 - Shadcn
 
 ## tRPC
+
+- [tRPC](https://trpc.io/)
+- [tRPC Nuxt](https://trpc-nuxt.vercel.app/)
 
 ```bash
 .
